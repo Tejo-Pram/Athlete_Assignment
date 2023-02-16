@@ -1,3 +1,10 @@
+PRE-REQUISITES :
+
+- A linux machine with minikube and kubectl installed.
+
+- Be sure kubectl is configured correctly with minikube.
+
+
 INSTRUCTIONS :
 
 1. In your terminal make the project directory your working directory.
@@ -44,6 +51,6 @@ ISSUES ENCOUNTERED AND TROUBLESHOOTING :
   I wanted a way to use the local image, so after a lot of online reading I figured out that we could build the image within the minikbe cluster using the 
   'minikube image build'.
 
-- In the deployment and service 'yaml' files, the binding of the port numbers had to be done carefully. Took some time to fully comprehend how the request 
-  flows the ingress to service to pod.
+- In the deployment and service 'yaml' files, the binding of the port numbers had to be done carefully. Took some time to fully comprehend how the request flows the ingress to service to pod.
+  
 - I needed to configure a local DNS mapping in /etc/hosts file for the ingress, but didn't have the permission to do it.So, I used 'nip.io' for it.
