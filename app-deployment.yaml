@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: athleteapp-deployment
+  labels:
+    app: athleteapp
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: athleteapp
+  template:
+    metadata:
+      labels:
+        app: athleteapp
+    spec:
+      containers:
+      - name: athleteapp
+        image: pramarda/athlete
+        imagePullPolicy : Never
+        ports:
+        - containerPort: 8081
