@@ -2,7 +2,7 @@ PRE-REQUISITES :
 
 - A linux machine with minikube and kubectl installed.
 
-- Be sure kubectl is configured correctly with minikube.
+- Be sure kubectl is configured correctly with minikube and also the ingress add-on is enabled.
 
 
 INSTRUCTIONS :
@@ -15,7 +15,7 @@ INSTRUCTIONS :
 3. Enter the following command to run the shell script.
         ./build-deploy.sh
 
-4. Please wait till it is completely executed and you should see an "address" ( something like 192.168.49.2 ).
+4. Please wait till it is completely executed and you should see an "ADDRESS" ( something like 192.168.49.2 ).
 
 5. Open your web browser, and goto the following, to see my favourite athlete json object.
         <<  local-arcesium-org.A.B.C.D.nip.io/athlete  >> , where A.B.C.D is the aforementioned address.
