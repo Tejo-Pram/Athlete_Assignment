@@ -6,9 +6,9 @@ echo ""
 kubectl apply -f app-deployment.yaml
 echo ""
 kubectl apply -f ingress.yaml
-echo "Please wait....(approx 30 sec.)"
+echo "Please wait....(approx 1 min.)"
 echo ""
-sleep 25
+sleep 60
 kubectl get ingress 
 echo ""
 echo "In your browser goto <<  local-arcesium-org.A.B.C.D.nip.io/athlete  >>,"
